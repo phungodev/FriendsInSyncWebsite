@@ -333,9 +333,39 @@ a {
 
     font-size: 13px;
     letter-spacing: 2px;
+    line-height: 1.8;
     text-transform: uppercase;
 
-    opacity: 0.7;
+    opacity: 0.8;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hero-tagline {
+    margin-top: 12px;
+
+    font-size: 11px;
+    letter-spacing: 2px;
+    line-height: 1.8;
+
+    opacity: 0.65;
+
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hero-mission {
+    margin-top: 25px;
+
+    font-size: 11px;
+    letter-spacing: 1px;
+    line-height: 1.8;
+
+    opacity: 0.65;
+
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .primary-button {
@@ -514,8 +544,7 @@ a {
 .band-image:hover {
     transform: scale(1.04);
 }
-
-.band-info p {
+.band-info p:not(.section-label) {
     max-width: 500px;
 
     margin-top: 40px;
@@ -570,6 +599,8 @@ a {
 
 .interactive-band-image {
     width: 100%;
+    max-width: 600px;
+    height: auto;
 
     display: block;
 
@@ -661,6 +692,24 @@ a {
    EVENTS
 ========================= */
 
+.events-intro {
+    margin-top: 35px;
+    max-width: 650px;
+}
+
+.events-tagline {
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+    opacity: 0.8;
+}
+
+.events-description {
+    font-size: 15px;
+    line-height: 1.9;
+    opacity: 0.6;
+}
+
 .events {
     padding: 150px 5%;
 
@@ -707,6 +756,7 @@ a {
 
     opacity: 0.5;
 }
+
 
 
 /* =========================
@@ -1165,4 +1215,58 @@ footer > p {
     width: 1px;
     height: 1px;
     overflow: hidden;
+}
+/* =========================
+   ABOUT SECTION
+========================== */
+
+.about {
+    padding: 140px 10%;
+    background: #080808;
+    color: white;
+}
+
+.about h2 {
+    font-size: clamp(38px, 7vw, 90px);
+    line-height: 0.95;
+    letter-spacing: -3px;
+    margin-bottom: 35px;
+}
+
+.about h2 span {
+    opacity: 0.45;
+}
+
+.about > p:not(.section-label):not(.about-motto) {
+    max-width: 650px;
+    font-size: 15px;
+    line-height: 1.9;
+    opacity: 0.7;
+    margin-bottom: 20px;
+}
+
+.about-motto {
+    margin-top: 35px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+    .about {
+        padding: 90px 7%;
+    }
+
+    .about h2 {
+        letter-spacing: -2px;
+    }
+}
+.developer-credit {
+    text-align: center;
+    font-size: 10px;
+    font-weight: 400;
+    color: #777;
+    margin-top: 18px;
+    letter-spacing: 0.5px;
 }
